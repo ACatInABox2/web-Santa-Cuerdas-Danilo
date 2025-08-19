@@ -8,7 +8,7 @@ const firma_digital = {
 console.log(firma_digital);
 // Cargar un componente en un div específico
 async function loadComponent(id, file) {
-  const res = await fetch(`components/${file}`);
+  const res = await fetch(`frontend/src/components/${file}`);
   document.getElementById(id).innerHTML = await res.text();
 }
 
