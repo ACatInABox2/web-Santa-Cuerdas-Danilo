@@ -11,7 +11,7 @@ console.log(firma_digital);
 async function loadComponent(id, file) {
   try {
     // 👇 OJO: el path correcto desde index.html
-    const res = await fetch(`./frontend/src/components/${file}`);
+    const res = await fetch(`./components/${file}`);
     if (!res.ok) throw new Error(`No se pudo cargar ${file}`);
     document.getElementById(id).innerHTML = await res.text();
   } catch (err) {
